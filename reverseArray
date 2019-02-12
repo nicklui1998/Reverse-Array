@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+void rArray(int array[], int front, int back) { // function used to reverse the array , inputs are an array, and front and back
+	while (front < back) {
+		int tempInt = array[front];
+		array[front] = array[back]; //temporary int used to swap the locations of elements in the array
+		array[back] = tempInt;
+		front++;
+		back;;
+	}
